@@ -1,0 +1,36 @@
+* {
+	margin: 0; padding: 0;
+	}
+
+body {
+	font-family: tahoma; background-color: black; color: white;
+	}
+
+h1 {
+	font-size: 40px; color: yellow;
+	}
+
+h2 {
+	font-size: 30px; color: gray;
+	}
+
+.kontener {
+	text-align: center;	margin: 10px; padding: 10px;
+	}
+
+hr {
+	margin: 10px 0;
+	color: silver;
+	}
+
+form div {
+	padding: 10px;			
+	}
+	
+label, .label, #send {
+	font-size: 18px; margin-right: 10px;		
+	}
+
+input,select {
+	font-size: 18px; margin-right: 10px; padding: 0 10px; width: 150px; text-align: center; background: silver;		
+	}

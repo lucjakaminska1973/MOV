@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="ask.css" />
+	<title>polecenie MOV dla INTEL x8086</title>
+	<script src="ask.js"></script>
+</head>
+
+<body>
+	<div class="kontener">
+		<h1>MOV INTEL x8086</h1>
+		<h2>WYSYŁA ZAWARTOŚCI REJESTRU DO INNEGO REJESTRU</h2>
+<hr>
+		<div class="form">
+			<form name="form">
+				<div>
+					<label>ZAWARTOŚĆ REJESTRU AX</label>
+					<input type="text" name="AX" id="ax"></div>
+					
+				<div>
+					<label>ZAWARTOŚĆ REJESTRU BX</label>
+					<input type="text" name="BX" id="bx"></div>
+				
+				<div>
+					<label>ZAWARTOŚĆ REJESTRU CX</label>
+					<input type="text" name="CX" id="cx"></div>
+				
+				<div>
+					<label>ZAWARTOŚĆ REJESTRU DX</label>
+					<input type="text" name="DX" id="dx"></div>
+<hr>				
+				<div>
+					<p class="label">REJESTR ŹRÓDŁOWY:<br/></p>
+					<select id="zrodlowy">
+						<option value="AX">REJESTR AX</option>
+						<option value="BX">REJESTR BX</option>
+						<option value="CX">REJESTR CX</option>
+						<option value="DX">REJESTR DX</option>
+					</select></div>
+				
+				
+				<div>
+					<p class="label">REJESTR DOCELOWY:</p>
+					<select id="docelowy">
+						<option value="AX">REJESTR AX</option>
+						<option value="BX">REJESTR BX</option>
+						<option value="CX">REJESTR CX</option>
+						<option value="DX">REJESTR DX</option>
+					</select></div>
+<hr>
+				<div>
+					<p id="rezultat"></p>
+				</div>
+				<div>
+					<input type="submit" name="wyslij" id="send" value="WYŚLIJ" onclick="mov(); return false;">
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+
+</body>
+</html>
